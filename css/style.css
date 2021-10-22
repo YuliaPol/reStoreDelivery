@@ -623,6 +623,71 @@ body {
   background: #fff;
 }
 
+.page-wrapper .phone-img {
+  position: absolute;
+  width: 230px;
+  top: 0px;
+  right: 0px;
+  z-index: 100;
+  max-width: 60%;
+}
+
+.page-wrapper .phone-img img {
+  width: 100%;
+}
+
+.page-wrapper .purple-container {
+  min-height: calc(100% - 40px);
+  background: #3B233F;
+  padding: 30px;
+}
+
+.page-wrapper .purple-container .text-block {
+  font-family: "Graphik";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 175px;
+  padding-top: 120px;
+}
+
+.page-wrapper .purple-container .text-block .green {
+  color: #00AF8F;
+}
+
+.page-wrapper .purple-container .btns-wrap {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-wrapper .purple-container .btns-wrap .btn-default {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  background: transparent;
+}
+
+.page-wrapper .purple-container .btns-wrap .btn-default:last-child {
+  margin-top: 20px;
+}
+
 .page-wrapper .slider-wrap {
   max-width: 100%;
   overflow: hidden;
@@ -1100,6 +1165,14 @@ body {
   .page-wrapper .slider-wrap .slider-block {
     width: calc(100% - 240px);
   }
+  .page-wrapper .purple-container {
+    padding: 20px;
+  }
+  .page-wrapper .purple-container .text-block {
+    max-width: 50%;
+    font-size: 16px;
+    line-height: 38px;
+  }
 }
 
 @media screen and (max-height: 750px) {
@@ -1217,6 +1290,14 @@ body {
   padding-bottom: 10px;
 }
 
+.height700 .page-wrapper .purple-container .text-block {
+  padding-top: 80px;
+}
+
+.height700 .page-wrapper .purple-container .btns-wrap {
+  padding-top: 50px;
+}
+
 .height650 .page-wrapper .first-question .first-question-content {
   padding-top: 50px;
 }
@@ -1258,5 +1339,13 @@ body {
 .height600 .page-wrapper .first-question .question {
   font-size: 18px;
   line-height: 24px;
+}
+
+.height600 .page-wrapper .purple-container .text-block {
+  padding-top: 40px;
+}
+
+.height600 .page-wrapper .purple-container .btns-wrap {
+  padding-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
