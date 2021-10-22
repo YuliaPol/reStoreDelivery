@@ -500,6 +500,11 @@ body {
   pointer-events: all;
 }
 
+.page-wrapper .slider-wrap .slider-content.show-slider .slider-block .bottom-text {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .page-wrapper .slider-wrap .before-slider {
   width: 340px;
   min-width: 340px;
@@ -574,6 +579,11 @@ body {
   padding-right: 30px;
   padding-bottom: 20px;
   width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+  pointer-events: none;
 }
 
 .page-wrapper .slider-wrap .slider-block .bottom-text .slider-position {

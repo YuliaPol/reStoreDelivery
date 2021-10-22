@@ -344,6 +344,12 @@ body {
                 .questions-list {
                     pointer-events: all;
                 }
+                .slider-block {
+                    .bottom-text {
+                        opacity: 1;
+                        pointer-events: all;
+                    }
+                }
             }
         }
         .before-slider {
@@ -393,6 +399,9 @@ body {
                 padding-right: 30px;
                 padding-bottom: 20px;
                 width: 100%;
+                opacity: 0;
+                transition: opacity 0.3s ease-in;
+                pointer-events: none;
                 .slider-position {
                     font-family: $fontPage;
                     font-weight: 500;
