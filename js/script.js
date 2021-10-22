@@ -53,6 +53,11 @@ jQuery(function ($) {
                 let currentItem = event.relatedTarget['_current'] + 1;
                 let sum =  event.item.count;
                 $('.slider-block').find('.slider-position .current').html(currentItem);
+                if(currentItem === sum) {
+                    $('.slider-block').find('.next-question').fadeOut(300);
+                } else {
+                    $('.slider-block').find('.next-question').fadeIn(300);
+                }
             });
         }
         function nextSlider(){
