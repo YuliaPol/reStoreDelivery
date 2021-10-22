@@ -46,18 +46,28 @@ jQuery(function ($) {
         //drag to the slider
         if($('.slider-content').length > 0){
             if(!$('.slider-content').hasClass('show-slider')){
+                //for drag
                 const delta = 6;
                 let startX;
-                let startY;
                 document.addEventListener('mousedown', function (event) {
                     startX = event.pageX;
-                    startY = event.pageY;
                 });
                 document.addEventListener('mouseup', function (event) {
                     const diffX = Math.abs(event.pageX - startX);
-                    const diffY = Math.abs(event.pageY - startY);
-
                     if (diffX > delta) {
+                        showSlider();
+                    }
+                });
+
+                //for touch
+                const dDelta = 6;
+                let dStartX;
+                document.addEventListener('touchstart', function (event) {
+                    dStartX = event.pageX;
+                });
+                document.addEventListener('touchend', function (event) {
+                    const diffX = Math.abs(event.pageX - dStartX);
+                    if (diffX > dDelta) {
                         showSlider();
                     }
                 });
