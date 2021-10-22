@@ -43,9 +43,33 @@ jQuery(function ($) {
             });
         }
 
-        //swipe first slide
+        //drag to the slider
+        if($('.slider-content').length > 0){
+            if(!$('.slider-content').hasClass('show-slider')){
+                const delta = 6;
+                let startX;
+                let startY;
+                document.addEventListener('mousedown', function (event) {
+                    startX = event.pageX;
+                    startY = event.pageY;
+                });
+                document.addEventListener('mouseup', function (event) {
+                    const diffX = Math.abs(event.pageX - startX);
+                    const diffY = Math.abs(event.pageY - startY);
+
+                    if (diffX > delta) {
+                        showSlider();
+                    }
+                });
+            }
+        }
+        //click on show slider
         $('.start-slider').click(function(e){
-            $(this).parents('.slider-content').addClass('show-slider');
+            showSlider();
         });
+        //move to the slider
+        function showSlider(){
+            $('.slider-content').addClass('show-slider');
+        }
     });
 });
