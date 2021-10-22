@@ -469,6 +469,9 @@ body {
             .questions-list {
                 pointer-events: none;
             }
+            .owl-height {
+                height: auto !important;
+            }
             &.show-slider {
                 transform: translateX(-340px);
                 .questions-list {

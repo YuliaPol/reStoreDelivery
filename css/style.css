@@ -659,6 +659,10 @@ body {
   pointer-events: none;
 }
 
+.page-wrapper .slider-wrap .slider-content .owl-height {
+  height: auto !important;
+}
+
 .page-wrapper .slider-wrap .slider-content.show-slider {
   -webkit-transform: translateX(-340px);
       -ms-transform: translateX(-340px);

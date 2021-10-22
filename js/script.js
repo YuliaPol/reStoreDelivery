@@ -27,5 +27,23 @@ jQuery(function ($) {
                 $('.text-0-6').fadeIn(300);
             }
         }
+
+        //height of window
+        var intFrameHeight = $(window).height();
+        if(intFrameHeight < 601){
+            $('body').addClass('height600');
+        }
+        if(intFrameHeight < 651){
+            $('body').addClass('height650');
+
+        }
+        if(intFrameHeight < 701){
+            $('body').addClass('height700');
+
+        } 
+        if(intFrameHeight < 751){
+            $('body').addClass('height750');
+
+        }
     });
 });
