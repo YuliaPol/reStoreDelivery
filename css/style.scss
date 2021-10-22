@@ -585,117 +585,6 @@ body {
         background: #fff;
     }
 }
-@media screen and (max-height: 750px) {
-    .page-wrapper {
-        .first-question {
-            .first-question-content {
-                padding-top: 100px;
-            }
-        }
-        .slider-wrap {
-            .questions-list {
-                .question-wrap {
-                    padding-bottom: 30px;
-                    .question {
-                        padding-top: 40px;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-height: 700px) {
-    .page-wrapper {
-        .first-question {
-            .first-question-content {
-                padding-top: 60px;
-            }
-            .range-container {
-                padding-top: 50px;
-            }
-        }
-        .slider-wrap {
-            .before-slider {
-                padding-top: 100px;
-                .btns-wrap {
-                    padding-top: 40px;
-                }
-            }
-            .questions-list {
-                .question-wrap {
-                    padding-bottom: 20px;
-                    .question {
-                        padding-top: 20px;
-                    }
-                    .answer-list {
-                        .asnwer-item {
-                            padding-bottom: 10px;
-                            label {
-                                line-height: 15px;
-                            }
-                        }
-                    }
-                }
-            }
-            .slider-block {
-                .bottom-text {
-                    padding-bottom: 10px;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-height: 650px) {
-    .page-wrapper {
-        .first-question {
-            .first-question-content {
-                padding-top: 50px;
-            }
-            .range-container {
-                padding-top: 40px;
-            }
-        }
-        .slider-wrap {
-            .before-slider {
-                padding-top: 70px;
-                .btns-wrap {
-                    padding-top: 30px;
-                }
-                .slide-text {
-                    font-size: 18px;
-                    line-height: 38px;
-                }
-            }
-            .questions-list {
-                .question-wrap {
-                    .comment-wrap {
-                        padding-top: 25px;
-                    }
-                    .btn-wrap {
-                        padding-top: 25px;
-                        padding-bottom: 20px;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-height: 600px) {
-    .page-wrapper {
-        .first-question {
-            .first-question-content {
-                padding-top: 40px;
-            }
-            .range-container {
-                padding-top: 30px;
-            }
-            .question {
-                font-size: 18px;
-                line-height: 24px;
-            }
-        }
-    }
-}
 @media screen and (max-width: 420px) {
     .page-wrapper {
         .slider-wrap {
@@ -752,6 +641,117 @@ body {
             }
             .slider-block {
                 width: calc(100% - 240px);
+            }
+        }
+    }
+}
+.height750 {
+    .page-wrapper {
+        .first-question {
+            .first-question-content {
+                padding-top: 100px;
+            }
+        }
+        .slider-wrap {
+            .questions-list {
+                .question-wrap {
+                    padding-bottom: 30px;
+                    .question {
+                        padding-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+.height700 {
+    .page-wrapper {
+        .first-question {
+            .first-question-content {
+                padding-top: 60px;
+            }
+            .range-container {
+                padding-top: 50px;
+            }
+        }
+        .slider-wrap {
+            .before-slider {
+                padding-top: 100px;
+                .btns-wrap {
+                    padding-top: 40px;
+                }
+            }
+            .questions-list {
+                .question-wrap {
+                    padding-bottom: 20px;
+                    .question {
+                        padding-top: 20px;
+                    }
+                    .answer-list {
+                        .asnwer-item {
+                            padding-bottom: 10px;
+                            label {
+                                line-height: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .slider-block {
+                .bottom-text {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+.height650 {
+    .page-wrapper {
+        .first-question {
+            .first-question-content {
+                padding-top: 50px;
+            }
+            .range-container {
+                padding-top: 40px;
+            }
+        }
+        .slider-wrap {
+            .before-slider {
+                padding-top: 70px;
+                .btns-wrap {
+                    padding-top: 30px;
+                }
+                .slide-text {
+                    font-size: 18px;
+                    line-height: 38px;
+                }
+            }
+            .questions-list {
+                .question-wrap {
+                    .comment-wrap {
+                        padding-top: 25px;
+                    }
+                    .btn-wrap {
+                        padding-top: 25px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+.height600 {
+    .page-wrapper {
+        .first-question {
+            .first-question-content {
+                padding-top: 40px;
+            }
+            .range-container {
+                padding-top: 30px;
+            }
+            .question {
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
