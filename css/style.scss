@@ -97,6 +97,9 @@ body {
             }
         }
     }
+    .survey-content {
+        height: calc(100% - 40px);
+    }
     .first-question {
         position: relative;
         padding-left: 15px;
@@ -375,7 +378,7 @@ body {
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
-            min-height: calc(100vh - 40px);
+            min-height: 100%;
             .bottom-text {
                 display: flex;
                 align-items: center;
@@ -427,12 +430,15 @@ body {
         .questions-list {
             width: 100%;
             padding-top: 30px;
+            .owl-stage {
+                display: flex;
+                align-items: stretch;
+            }
             .question-wrap {
-                height: 100%;
                 padding-left: 30px;
                 padding-right: 30px;
-                height: calc(100vh - 120px);
                 padding-bottom: 50px;
+                height: 100%;
                 .question-box {
                     background: #FFFFFF;
                     box-shadow: 0px 5px 16px 8px rgba(0, 0, 0, 0.05);

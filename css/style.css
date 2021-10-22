@@ -120,6 +120,10 @@ body {
   width: 100%;
 }
 
+.page-wrapper .survey-content {
+  height: calc(100% - 40px);
+}
+
 .page-wrapper .first-question {
   position: relative;
   padding-left: 15px;
@@ -544,7 +548,7 @@ body {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  min-height: calc(100vh - 40px);
+  min-height: 100%;
 }
 
 .page-wrapper .slider-wrap .slider-block .bottom-text {
@@ -632,12 +636,22 @@ body {
   padding-top: 30px;
 }
 
+.page-wrapper .slider-wrap .questions-list .owl-stage {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
 .page-wrapper .slider-wrap .questions-list .question-wrap {
-  height: 100%;
   padding-left: 30px;
   padding-right: 30px;
-  height: calc(100vh - 120px);
   padding-bottom: 50px;
+  height: 100%;
 }
 
 .page-wrapper .slider-wrap .questions-list .question-wrap .question-box {
