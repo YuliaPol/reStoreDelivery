@@ -328,12 +328,14 @@ body {
     .slider-wrap {
         max-width: 100%;
         overflow: hidden;
+        height: 100%;
         .slider-content {
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
             width: calc(100% + 340px);
             transition: transform 0.3s ease-in;
+            height: 100%;
             .questions-list {
                 pointer-events: none;
             }
@@ -350,6 +352,8 @@ body {
             padding-top: 160px;
             padding-left: 23px;
             padding-right: 15px;
+            max-height: 100%;
+            overflow: auto;
             .slide-text {
                 font-family: $fontPage;
                 font-weight: 500;
@@ -379,6 +383,8 @@ body {
             justify-content: space-between;
             align-items: flex-start;
             min-height: 100%;
+            max-height: 100%;
+            overflow: auto;
             .bottom-text {
                 display: flex;
                 align-items: center;
@@ -520,7 +526,7 @@ body {
                         }
                         label {
                             display: flex;
-                            align-items: flex-start;
+                            align-items: stretch;
                             justify-content: flex-start;
                             font-family: $fontPage;
                             font-weight: 500;
@@ -528,6 +534,10 @@ body {
                             line-height: 17px;
                             color: #666262;
                             font-weight: 400;
+                            .text {
+                                display: flex;
+                                align-items: center;
+                            }
                             .check {
                                 width: 20px;
                                 min-width: 20px;
@@ -536,6 +546,7 @@ body {
                                 border: 1px solid #C7C7C7;
                                 border-radius: 50%;
                                 position: relative;
+                                margin-top: -2px;
                                 &::before {
                                     content: "";
                                     position: absolute;
@@ -581,6 +592,16 @@ body {
                 padding-top: 100px;
             }
         }
+        .slider-wrap {
+            .questions-list {
+                .question-wrap {
+                    padding-bottom: 30px;
+                    .question {
+                        padding-top: 40px;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-height: 700px) {
@@ -593,6 +614,35 @@ body {
                 padding-top: 50px;
             }
         }
+        .slider-wrap {
+            .before-slider {
+                padding-top: 100px;
+                .btns-wrap {
+                    padding-top: 40px;
+                }
+            }
+            .questions-list {
+                .question-wrap {
+                    padding-bottom: 20px;
+                    .question {
+                        padding-top: 20px;
+                    }
+                    .answer-list {
+                        .asnwer-item {
+                            padding-bottom: 10px;
+                            label {
+                                line-height: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .slider-block {
+                .bottom-text {
+                    padding-bottom: 10px;
+                }
+            }
+        }
     }
 }
 @media screen and (max-height: 650px) {
@@ -603,6 +653,29 @@ body {
             }
             .range-container {
                 padding-top: 40px;
+            }
+        }
+        .slider-wrap {
+            .before-slider {
+                padding-top: 70px;
+                .btns-wrap {
+                    padding-top: 30px;
+                }
+                .slide-text {
+                    font-size: 18px;
+                    line-height: 38px;
+                }
+            }
+            .questions-list {
+                .question-wrap {
+                    .comment-wrap {
+                        padding-top: 25px;
+                    }
+                    .btn-wrap {
+                        padding-top: 25px;
+                        padding-bottom: 20px;
+                    }
+                }
             }
         }
     }
@@ -619,6 +692,66 @@ body {
             .question {
                 font-size: 18px;
                 line-height: 24px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+    .page-wrapper {
+        .slider-wrap {
+            .slider-content {
+                width: calc(100% + 300px);
+                &.show-slider {
+                    transform: translateX(-300px);
+                }
+            }
+            .before-slider {
+                width: 300px;
+                min-width: 300px;
+            }
+            .slider-block {
+                width: calc(100% - 300px);
+            }
+        }
+    }
+}
+@media screen and (max-width: 380px) {
+    .page-wrapper {
+        .slider-wrap {
+            .slider-content {
+                width: calc(100% + 260px);
+                &.show-slider {
+                    transform: translateX(-260px);
+                }
+            }
+            .before-slider {
+                width: 260px;
+                min-width: 260px;
+            }
+            .slider-block {
+                width: calc(100% - 260px);
+            }
+        }
+    }
+}
+@media screen and (max-width: 340px) {
+    .page-wrapper {
+        .slider-wrap {
+            .slider-content {
+                width: calc(100% + 240px);
+                &.show-slider {
+                    transform: translateX(-240px);
+                }
+            }
+            .before-slider {
+                width: 240px;
+                min-width: 240px;
+                .btn-default {
+                    min-width: 200px;
+                }
+            }
+            .slider-block {
+                width: calc(100% - 240px);
             }
         }
     }
