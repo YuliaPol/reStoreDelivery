@@ -42,7 +42,7 @@ table {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
 }
 
 *::-webkit-scrollbar-track {
@@ -73,7 +73,7 @@ body {
   width: 100vw;
   height: 100vh;
   height: var(--app-height);
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   background: #B8B6B6;
 }
 
@@ -149,7 +149,7 @@ body {
 
 .page-wrapper .thanks3-content .big-text {
   padding-top: 140px;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: 28px;
   line-height: 38px;
@@ -164,7 +164,7 @@ body {
 .page-wrapper .thanks3-content .gradient-text {
   position: relative;
   z-index: 20;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 31px;
@@ -178,9 +178,9 @@ body {
 .page-wrapper .thanks3-content .small-text {
   padding-top: 40px;
   padding-bottom: 20px;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 22px;
   color: #000000;
 }
@@ -222,7 +222,7 @@ body {
 }
 
 .page-wrapper .thanks2-content .thanks-pink .text {
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 15px;
@@ -269,7 +269,7 @@ body {
 .page-wrapper .thanks2-content .thanks-pink .big-text {
   padding-top: 40px;
   padding-bottom: 30px;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-size: 19px;
   line-height: 22px;
@@ -336,20 +336,20 @@ body {
 
 .page-wrapper .thanks-content .thanks-block .text {
   padding-top: 40px;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 31px;
   text-align: center;
   text-transform: uppercase;
-  background: -webkit-linear-gradient(#FF593E, #A40094);
+  background: -webkit-linear-gradient(0deg, #FF593E, #A40094);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .page-wrapper .thanks-content .thanks-block .small-text {
-  font-family: "Graphik";
-  font-size: 12px;
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
   line-height: 22px;
   text-align: center;
   color: #000000;
@@ -407,7 +407,7 @@ body {
 }
 
 .page-wrapper .first-question .question {
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-size: 20px;
   line-height: 27px;
   text-align: center;
@@ -502,7 +502,7 @@ body {
 .page-wrapper .first-question .range10 label .range-number {
   width: 26px;
   height: 26px;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-size: 11px;
   line-height: 25px;
   color: #483D3D;
@@ -571,7 +571,7 @@ body {
 
 .page-wrapper .first-question .bottom-text {
   padding-top: 10px;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   line-height: 22px;
   text-align: center;
@@ -612,7 +612,7 @@ body {
   border: none;
   width: 100%;
   padding: 5px 0px;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-size: 12px;
   line-height: 17px;
   border-bottom: 1px solid #C4C4C4;
@@ -677,7 +677,7 @@ body {
   cursor: pointer;
   border: 1px solid #000000;
   border-radius: 5px;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
   line-height: 18px;
   color: #404040;
@@ -708,7 +708,7 @@ body {
 }
 
 .page-wrapper .purple-container .text-block {
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 43px;
@@ -770,10 +770,10 @@ body {
 }
 
 .page-wrapper .questions-list .question-wrap .question {
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 17px;
+  line-height: 21px;
   color: #000000;
   padding-top: 40px;
   padding-left: 15px;
@@ -781,9 +781,9 @@ body {
 }
 
 .page-wrapper .questions-list .question-wrap .descr-question {
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 17px;
   color: #5E5E5E;
   padding-top: 15px;
@@ -804,8 +804,8 @@ body {
   border: none;
   width: 100%;
   padding: 5px 0px;
-  font-family: "Graphik";
-  font-size: 12px;
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
   line-height: 17px;
   border-bottom: 1px solid #C4C4C4;
   resize: none;
@@ -878,17 +878,17 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 17px;
   color: #666262;
   font-weight: 400;
@@ -913,7 +913,6 @@ body {
   border: 1px solid #C7C7C7;
   border-radius: 50%;
   position: relative;
-  margin-top: -2px;
 }
 
 .page-wrapper .questions-list .question-wrap .answer-list .asnwer-item label .check::before {
@@ -937,7 +936,7 @@ body {
 
 .page-wrapper .questions-list .question-wrap .question-position {
   text-align: right;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: 8px;
   line-height: 14px;
@@ -1039,7 +1038,7 @@ body {
 }
 
 .page-wrapper .slider-wrap .before-slider .slide-text {
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 43px;
@@ -1110,7 +1109,7 @@ body {
 }
 
 .page-wrapper .slider-wrap .slider-block .bottom-text .slider-position {
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: 8px;
   line-height: 14px;
@@ -1136,7 +1135,7 @@ body {
 }
 
 .page-wrapper .slider-wrap .slider-block .bottom-text .next-question {
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: 8px;
   line-height: 17px;
@@ -1292,7 +1291,7 @@ body {
 }
 
 .page-wrapper .deliver-survey .question-list .question-wrap .question {
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
@@ -1300,7 +1299,7 @@ body {
 }
 
 .page-wrapper .deliver-survey .question-list .question-wrap .answers-list {
-  max-width: 235px;
+  max-width: 260px;
   margin: auto;
   padding-top: 25px;
   display: -ms-grid;
@@ -1343,9 +1342,9 @@ body {
           align-items: center;
   background: #FFFFFF;
   border-radius: 5px;
-  font-family: "Graphik";
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 17px;
   color: #666262;
   border: 1px solid transparent;
@@ -1405,8 +1404,8 @@ body {
   text-align: center;
   border: 1px solid #000000;
   border-radius: 5px;
-  font-family: "Graphik";
-  font-weight: 500;
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
   font-size: 15px;
   line-height: 18px;
   color: #404040;
@@ -1434,6 +1433,12 @@ body {
 }
 
 @media screen and (max-width: 380px) {
+  .page-wrapper .questions-list .question-wrap .question {
+    font-size: 14px;
+  }
+  .page-wrapper .questions-list .question-wrap .answer-list .asnwer-item label {
+    font-size: 12px;
+  }
   .page-wrapper .slider-wrap .slider-content {
     width: calc(100% + 260px);
   }

@@ -1,4 +1,4 @@
-$fontPage: 'Graphik';
+$fontPage: "Graphik LCG", "Helvetica Neue", Arial,sans-serif;
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -150,7 +150,7 @@ body {
             padding-bottom: 20px;
             font-family: $fontPage;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 22px;
             color: #000000;
         }
@@ -272,13 +272,13 @@ body {
                 line-height: 31px;
                 text-align: center;
                 text-transform: uppercase;
-                background: -webkit-linear-gradient(#FF593E, #A40094);
+                background: -webkit-linear-gradient(0deg, #FF593E, #A40094);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
             .small-text {
                 font-family: $fontPage;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 22px;
                 text-align: center;
                 color: #000000;
@@ -567,8 +567,8 @@ body {
             .question {
                 font-family: $fontPage;
                 font-weight: 500;
-                font-size: 14px;
-                line-height: 17px;
+                font-size: 17px;
+                line-height: 21px;
                 color: #000000;
                 padding-top: 40px;
                 padding-left: 15px;
@@ -577,7 +577,7 @@ body {
             .descr-question {
                 font-family: $fontPage;
                 font-weight: 400;
-                font-size: 11px;
+                font-size: 12px;
                 line-height: 17px;
                 color: #5E5E5E;
                 padding-top: 15px;
@@ -596,7 +596,7 @@ body {
                     width: 100%;
                     padding: 5px 0px;
                     font-family: $fontPage;
-                    font-size: 12px;
+                    font-size: 14px;
                     line-height: 17px;
                     border-bottom: 1px solid #C4C4C4;
                     resize: none;
@@ -635,11 +635,11 @@ body {
                     }
                     label {
                         display: flex;
-                        align-items: center;
+                        align-items: stretch;
                         justify-content: flex-start;
                         font-family: $fontPage;
                         font-weight: 500;
-                        font-size: 12px;
+                        font-size: 14px;
                         line-height: 17px;
                         color: #666262;
                         font-weight: 400;
@@ -655,7 +655,6 @@ body {
                             border: 1px solid #C7C7C7;
                             border-radius: 50%;
                             position: relative;
-                            margin-top: -2px;
                             &::before {
                                 content: "";
                                 position: absolute;
@@ -941,7 +940,7 @@ body {
                     text-transform: uppercase;
                 }
                 .answers-list {
-                    max-width: 235px;
+                    max-width: 260px;
                     margin: auto;
                     padding-top: 25px;
                     display: grid;
@@ -974,7 +973,7 @@ body {
                             border-radius: 5px;
                             font-family: $fontPage;
                             font-weight: 400;
-                            font-size: 12px;
+                            font-size: 14px;
                             line-height: 17px;
                             color: #666262;
                             border: 1px solid transparent;
@@ -1022,7 +1021,7 @@ body {
         border: 1px solid #000000;
         border-radius: 5px;
         font-family: $fontPage;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 15px;
         line-height: 18px;
         color: #404040;
@@ -1051,6 +1050,20 @@ body {
 }
 @media screen and (max-width: 380px) {
     .page-wrapper {
+        .questions-list {
+            .question-wrap {
+                .question {
+                    font-size: 14px;
+                }
+                .answer-list {
+                    .asnwer-item {
+                        label {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
         .slider-wrap {
             .slider-content {
                 width: calc(100% + 260px);
