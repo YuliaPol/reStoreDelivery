@@ -177,6 +177,7 @@ body {
 
 .page-wrapper .thanks3-content .small-text {
   padding-top: 40px;
+  padding-bottom: 20px;
   font-family: "Graphik";
   font-weight: 400;
   font-size: 12px;
@@ -1203,7 +1204,7 @@ body {
 }
 
 .page-wrapper .deliver-survey .question-list .question-wrap {
-  padding: 10px 20px;
+  padding: 10px 20px 30px;
   background: #F5F5F7;
 }
 
