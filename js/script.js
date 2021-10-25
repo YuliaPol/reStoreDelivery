@@ -28,6 +28,16 @@ jQuery(function ($) {
             }
         }
 
+        //move to the next question
+        $('.survey-list').on('change', 'input[type=radio]', function(e){
+            let nextQuestion = $(this).parents('.question-wrap').next();
+            setTimeout(() => {
+                nextQuestion.get(0).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }, 500);
+        });
+
         //height of window
         var intFrameHeight = $(window).height();
         if(intFrameHeight < 601){
@@ -45,5 +55,12 @@ jQuery(function ($) {
             $('body').addClass('height750');
 
         }
+        //autoheight for textarea
+        $("textarea").each(function () {
+            this.setAttribute("style", "height:" + (this.scrollHeight) + "px;overflow-y:hidden;");
+        }).on("input", function () {
+            this.style.height = "auto";
+            this.style.height = (this.scrollHeight) + "px";
+        });
     });
 });

@@ -100,6 +100,63 @@ body {
     .survey-content {
         height: calc(100% - 40px);
     }
+    .thanks3-content {
+        height: calc(100% - 40px);
+        padding-left: 17px;
+        padding-right: 17px;
+        position: relative;
+        &::before {
+            content: "";
+            max-width: 50%;
+            width: 250px;
+            height: 250px;
+            background: url(./../img/circle-bg.svg);
+            background-position: left bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 45px;
+            left: 0px;
+            z-index: 1;
+        }
+        .big-text {
+            padding-top: 140px;
+            font-family: $fontPage;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 38px;
+            text-transform: uppercase;
+            color: #282827;
+            position: relative;
+            z-index: 20;
+            max-width: 270px;
+            margin: auto;
+        }
+        .gradient-text {
+            position: relative;
+            z-index: 20;
+            font-family: $fontPage;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 31px;
+            text-transform: uppercase;
+            padding-top: 100px;
+            background: -webkit-linear-gradient(0deg, #FF593E, #A40094);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .small-text {
+            padding-top: 40px;
+            font-family: $fontPage;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 22px;
+            color: #000000;
+        }
+        .pink {
+            color: #F8007A;
+        }
+    }
     .thanks2-content {
         height: calc(100% - 40px);
         display: flex;
@@ -496,6 +553,157 @@ body {
             }
         }
     }
+    .questions-list {
+        width: 100%;
+        .question-wrap {
+            padding-bottom: 50px;
+            .pic-wrap {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .question {
+                font-family: $fontPage;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                padding-top: 40px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .descr-question {
+                font-family: $fontPage;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 17px;
+                color: #5E5E5E;
+                padding-top: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .comment-wrap {
+                padding-top: 50px;
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 10px;
+                textarea {
+                    outline: none;
+                    border: none;
+                    width: 100%;
+                    padding: 5px 0px;
+                    font-family: $fontPage;
+                    font-size: 12px;
+                    line-height: 17px;
+                    border-bottom: 1px solid #C4C4C4;
+                    resize: none;
+                    &::placeholder {
+                        color: #9E9E9E;
+                        font-size: 10px;
+                    }
+                }
+            }
+            .btn-wrap {
+                padding-left: 15px;
+                padding-right: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 50px;
+                padding-bottom: 40px;
+            }
+            .answer-list {
+                padding-top: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+                .asnwer-item {
+                    padding-bottom: 15px;
+                    input[type=radio] {
+                        display: none;
+                        &:checked {
+                            & ~ label {
+                                .check {
+                                    &::before {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    label {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        font-family: $fontPage;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 17px;
+                        color: #666262;
+                        font-weight: 400;
+                        .text {
+                            display: flex;
+                            align-items: center;
+                        }
+                        .check {
+                            width: 20px;
+                            min-width: 20px;
+                            margin-right: 10px;
+                            height: 20px;
+                            border: 1px solid #C7C7C7;
+                            border-radius: 50%;
+                            position: relative;
+                            margin-top: -2px;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 8px;
+                                height: 8px;
+                                background: #FF0084;
+                                border-radius: 50%;
+                                opacity: 0;
+                                transition: opacity 0.3s ease-in;
+                            }
+                        }
+                    }
+                }
+            }
+            .question-position {
+                text-align: right;
+                font-family: $fontPage;
+                font-weight: 500;
+                font-size: 8px;
+                line-height: 14px;
+                text-transform: uppercase;
+                color: #000000;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                padding-left: 20px;
+                padding-right: 20px;
+                .current {
+                    font-size: 15px;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+    .survey-list {
+        .questions-list {
+            .question-wrap {
+                .comment-wrap {
+                    padding-top: 70px;
+                }
+                .btn-wrap {
+                    padding-bottom: 0px;
+                }
+            }
+        }
+    }
     .slider-wrap {
         max-width: 100%;
         overflow: hidden;
@@ -620,7 +828,6 @@ body {
             }
         }
         .questions-list {
-            width: 100%;
             padding-top: 30px;
             .owl-stage {
                 display: flex;
@@ -635,119 +842,8 @@ body {
                     background: #FFFFFF;
                     box-shadow: 0px 5px 16px 8px rgba(0, 0, 0, 0.05);
                     min-height: 100%;
-                }
-                .pic-wrap {
-                    width: 100%;
-                    img {
-                        width: 100%;
-                    }
-                }
-                .question {
-                    font-family: $fontPage;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 17px;
-                    color: #000000;
-                    padding-top: 60px;
-                    padding-left: 15px;
-                    padding-right: 15px;
-                }
-                .descr-question {
-                    font-family: $fontPage;
-                    font-weight: 400;
-                    font-size: 11px;
-                    line-height: 17px;
-                    color: #5E5E5E;
-                    padding-top: 15px;
-                    padding-left: 15px;
-                    padding-right: 15px;
-                }
-                .comment-wrap {
-                    padding-top: 50px;
-                    width: 100%;
-                    padding-left: 15px;
-                    padding-right: 15px;
-                    textarea {
-                        outline: none;
-                        border: none;
-                        width: 100%;
-                        padding: 5px 0px;
-                        font-family: $fontPage;
-                        font-size: 12px;
-                        line-height: 17px;
-                        border-bottom: 1px solid #C4C4C4;
-                        resize: none;
-                        &::placeholder {
-                            color: #9E9E9E;
-                            font-size: 10px;
-                        }
-                    }
-                }
-                .btn-wrap {
-                    padding-left: 15px;
-                    padding-right: 15px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding-top: 60px;
-                    padding-bottom: 40px;
-                }
-                .answer-list {
-                    padding-top: 20px;
-                    padding-left: 15px;
-                    padding-right: 15px;
-                    .asnwer-item {
-                        padding-bottom: 15px;
-                        input[type=radio] {
-                            display: none;
-                            &:checked {
-                                & ~ label {
-                                    .check {
-                                        &::before {
-                                            opacity: 1;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        label {
-                            display: flex;
-                            align-items: stretch;
-                            justify-content: flex-start;
-                            font-family: $fontPage;
-                            font-weight: 500;
-                            font-size: 12px;
-                            line-height: 17px;
-                            color: #666262;
-                            font-weight: 400;
-                            .text {
-                                display: flex;
-                                align-items: center;
-                            }
-                            .check {
-                                width: 20px;
-                                min-width: 20px;
-                                margin-right: 10px;
-                                height: 20px;
-                                border: 1px solid #C7C7C7;
-                                border-radius: 50%;
-                                position: relative;
-                                margin-top: -2px;
-                                &::before {
-                                    content: "";
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                    transform: translate(-50%, -50%);
-                                    width: 8px;
-                                    height: 8px;
-                                    background: #FF0084;
-                                    border-radius: 50%;
-                                    opacity: 0;
-                                    transition: opacity 0.3s ease-in;
-                                }
-                            }
-                        }
+                    .question {
+                        padding-top: 60px;
                     }
                 }
             }
@@ -928,6 +1024,20 @@ body {
                 .img-item {
                     padding-bottom: 10px;
                 }
+            }
+        }
+        .thanks3-content {
+            &::before {
+                top: 10px;
+            }
+            .big-text {
+                padding-top: 100px;
+            }
+            .gradient-text {
+                padding-top: 80px;
+            }
+            .small-text {
+                padding-top: 30px;
             }
         }
     }  
