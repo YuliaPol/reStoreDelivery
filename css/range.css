@@ -17,7 +17,7 @@
   position: absolute;
   top: -25px;
   opacity: 0;
-  font-family: 'Graphik';
+  font-family: "Graphik LCG", "Helvetica Neue", Arial,sans-serif;
 }
 
 .point-marcking-wrapper {
@@ -72,7 +72,7 @@ input[type=range] {
   /* control the width of the curve */
   -webkit-appearance: none;
   appearance: none;
-  margin: 10px 24px 20px -52px;
+  margin: 10px 24px 0px -52px;
   padding: 0 20px;
   width: 138%;
   height: 60px;

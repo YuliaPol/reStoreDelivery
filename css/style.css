@@ -367,23 +367,8 @@ body {
   height: 100%;
 }
 
-.page-wrapper .first-question::before {
-  content: "";
-  width: 50%;
-  height: 351px;
-  background: url(./../img/circle-bg.svg);
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
-  position: absolute;
-  top: 15px;
-  left: -20px;
-  z-index: 1;
-}
-
 .page-wrapper .first-question .first-question-content {
-  padding-top: 140px;
+  padding-top: 120px;
   position: relative;
   z-index: 50;
   min-height: 100%;
@@ -414,7 +399,7 @@ body {
   letter-spacing: 0.02em;
   color: #000000;
   font-weight: 500;
-  max-width: 365px;
+  max-width: 300px;
   margin: auto;
 }
 
@@ -422,11 +407,39 @@ body {
   color: #FF0067;
 }
 
+.page-wrapper .first-question .labels {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #353434;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
 .page-wrapper .first-question .range-container {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 20px;
+}
+
+.page-wrapper .first-question .range-container ~ .labels {
+  margin-top: -20px;
 }
 
 .page-wrapper .first-question .range10 {
@@ -438,7 +451,6 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 50px;
   width: 100%;
 }
 
@@ -701,6 +713,84 @@ body {
   width: 100%;
 }
 
+.page-wrapper .img-container {
+  min-height: calc(100% - 40px);
+  background: url(./../img/minute-bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-wrapper .img-container .text-wrap {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31.88%, rgba(3, 4, 8, 0.7)), to(rgba(3, 4, 8, 0)));
+  background: -webkit-linear-gradient(top, rgba(3, 4, 8, 0.7) 31.88%, rgba(3, 4, 8, 0) 100%);
+  background: -o-linear-gradient(top, rgba(3, 4, 8, 0.7) 31.88%, rgba(3, 4, 8, 0) 100%);
+  background: linear-gradient(180deg, rgba(3, 4, 8, 0.7) 31.88%, rgba(3, 4, 8, 0) 100%);
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+}
+
+.page-wrapper .img-container .text-block {
+  font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 290px;
+}
+
+.page-wrapper .img-container .text-block .green {
+  color: #00AF8F;
+}
+
+.page-wrapper .img-container .btns-wrap {
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.page-wrapper .img-container .btns-wrap .btn-default:last-child {
+  margin-top: 20px;
+}
+
 .page-wrapper .purple-container {
   min-height: calc(100% - 40px);
   background: #3B233F;
@@ -710,12 +800,14 @@ body {
 .page-wrapper .purple-container .text-block {
   font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 43px;
+  font-size: 25px;
+  line-height: 51px;
+  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  max-width: 175px;
-  padding-top: 120px;
+  max-width: 212px;
+  margin: auto;
+  padding-top: 75px;
 }
 
 .page-wrapper .purple-container .text-block .green {
@@ -1212,82 +1304,27 @@ body {
 }
 
 .page-wrapper .deliver-survey .question-list .question-wrap:nth-child(1) .top-row .question {
-  width: 56%;
-  max-width: 190px;
-  min-width: 190px;
-  padding-top: 60px;
   background: -webkit-linear-gradient(0deg, #0472DD, #00C1B1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.page-wrapper .deliver-survey .question-list .question-wrap:nth-child(1) .top-row .img {
-  max-width: 44%;
-  width: 188px;
-}
-
 .page-wrapper .deliver-survey .question-list .question-wrap:nth-child(2) .top-row .question {
-  width: 56%;
-  min-width: 190px;
-  padding-top: 60px;
   background: -webkit-linear-gradient(0deg, #FF593E, #A40094);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.page-wrapper .deliver-survey .question-list .question-wrap:nth-child(2) .top-row .img {
-  max-width: 44%;
-  width: 153px;
-}
-
 .page-wrapper .deliver-survey .question-list .question-wrap:nth-child(3) .top-row .question {
-  width: 70%;
-  padding-top: 40px;
-  padding-left: 15px;
   background: -webkit-linear-gradient(0deg, #FF0067, #FF5F4C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.page-wrapper .deliver-survey .question-list .question-wrap:nth-child(3) .top-row .img {
-  width: 30%;
-  max-width: 134px;
-}
-
 .page-wrapper .deliver-survey .question-list .question-wrap:nth-child(4) .top-row .question {
-  width: 60%;
-  padding-top: 40px;
   background: -webkit-linear-gradient(0deg, #8000F9, #0094EA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.page-wrapper .deliver-survey .question-list .question-wrap:nth-child(4) .top-row .img {
-  width: 40%;
-  max-width: 168px;
-}
-
-.page-wrapper .deliver-survey .question-list .question-wrap .top-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.page-wrapper .deliver-survey .question-list .question-wrap .img {
-  max-width: 50%;
-}
-
-.page-wrapper .deliver-survey .question-list .question-wrap .img img {
-  width: 100%;
 }
 
 .page-wrapper .deliver-survey .question-list .question-wrap .question {
@@ -1296,6 +1333,10 @@ body {
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  padding-top: 40px;
+  max-width: 295px;
+  margin: auto;
+  text-align: center;
 }
 
 .page-wrapper .deliver-survey .question-list .question-wrap .answers-list {
@@ -1393,6 +1434,8 @@ body {
   color: #CD0800;
   padding-bottom: 10px;
   display: none;
+  max-width: 260px;
+  margin: auto;
 }
 
 .page-wrapper .btn-default {
@@ -1411,6 +1454,18 @@ body {
   color: #404040;
   padding: 10px 20px;
   background: #fff;
+}
+
+.page-wrapper .btn-default.btn-pink {
+  background: #FF0084;
+  color: #FFFFFF;
+  border: none;
+}
+
+.page-wrapper .btn-default.btn-grey {
+  background: #F2F2F2;
+  border: none;
+  color: #282626;
 }
 
 @media screen and (max-width: 420px) {
@@ -1433,6 +1488,9 @@ body {
 }
 
 @media screen and (max-width: 380px) {
+  .page-wrapper .first-question .question {
+    font-size: 20px;
+  }
   .page-wrapper .questions-list .question-wrap .question {
     font-size: 14px;
   }
@@ -1477,6 +1535,9 @@ body {
   .page-wrapper .deliver-survey .question-list .top-row .question {
     font-size: 15px;
     line-height: 20px;
+  }
+  .page-wrapper .first-question .bottom-text {
+    font-size: 12px;
   }
 }
 
