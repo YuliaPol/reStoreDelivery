@@ -221,6 +221,41 @@ body {
   margin-bottom: 15px;
 }
 
+.page-wrapper .thanks2-content .thanks-pink.anket-done-pink {
+  min-height: 250px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-wrapper .thanks2-content .thanks-pink.anket-done-pink .big-text {
+  font-size: 25px;
+  line-height: 22px;
+}
+
+.page-wrapper .thanks2-content .thanks-pink.anket-done-pink .text {
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.page-wrapper .thanks2-content .thanks-pink.anket-done-pink .text:last-child {
+  padding-bottom: 45px;
+}
+
 .page-wrapper .thanks2-content .thanks-pink .text {
   font-family: "Graphik LCG", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;

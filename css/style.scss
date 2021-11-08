@@ -173,6 +173,24 @@ body {
             padding: 13px 22px;
             margin-top: 50px;
             margin-bottom: 15px;
+            &.anket-done-pink {
+                min-height: 250px;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: space-between;
+                .big-text {
+                    font-size: 25px;
+                    line-height: 22px;
+                }
+                .text {
+                    font-size: 16px;
+                    line-height: 15px;
+                    &:last-child {
+                        padding-bottom: 45px;
+                    }
+                }
+            }
             .text {
                 font-family: $fontPage;
                 font-weight: 400;
